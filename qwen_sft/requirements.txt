@@ -1,0 +1,10 @@
+transformers>=4.31.0
+torch>=1.10.1
+rouge==1.0.1
+nltk==3.6.6
+peft>=0.2.0
+tensorboardX==2.4
+rouge==1.0.1
+nltk==3.6.6
+numpy
+tqdm

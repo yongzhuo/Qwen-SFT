@@ -55,14 +55,14 @@ tqdm
 
 ## 微调日志(ADVGEN)
 
-![qwen_sft/ft_qwen_loss.png](qwen_sft/ft_qwen_loss.png)
+![ft_qwen_loss.png](ft_qwen_loss.png)
 
 ## 推理日志(LoRA, R=8)
 sample-1:
-![qwen_sft/ft_qwen_sample_1.png](qwen_sft/ft_qwen_sample_1.png)
+![ft_qwen_sample_1.png](ft_qwen_sample_1.png)
 
 sample-2:
-![qwen_sft/ft_qwen_sample_2.png](qwen_sft/ft_qwen_sample_2.png)
+![ft_qwen_sample_2.png](ft_qwen_sample_2.png)
 
 
 ## 数据集-中文
