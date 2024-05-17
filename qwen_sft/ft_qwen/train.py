@@ -216,11 +216,11 @@ def data_collator(batch):
         if tokenizer.padding_side and tokenizer.padding_side == "left":
             labels = [-100] * len_padding + [-100] * len(x) + y
             input_ids = [ID_PAD] * len_padding + x + y
-            attention_mask = [1] * len_padding + [0] * (len_max_batch - len_padding)
+            attention_mask = [0] * len_padding + [1] * (len_max_batch - len_padding)
         else:
             labels = [-100] * len(x) + y + [-100] * len_padding
             input_ids = x + y + [ID_PAD] * len_padding
-            attention_mask = [0] * (len(x)+len(y)) + [1] * len_padding
+            attention_mask = [1] * (len(x)+len(y)) + [0] * len_padding
         tensor_attention_mask = torch.tensor(attention_mask, dtype=torch.long)
         tensor_input_ids = torch.tensor(input_ids, dtype=torch.long)
         tensor_labels = torch.tensor(labels, dtype=torch.long)
